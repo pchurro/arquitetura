@@ -37,4 +37,45 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
+
 }
+
+var isBook=false;
+
+function bookAppear(){
+    var book = document.getElementById("flipbook");
+    isBook=true;
+    var ind=7;
+
+    book.innerHTML = ""; // clear images
+
+    for (counter=1;counter<=ind;counter++) {
+        var div=document.createElement("div");
+        var imagem=document.createElement("img");
+        imagem.src="images/livro1/0"+counter+".png";
+
+
+            div.classList.add("page");
+
+        div.appendChild(imagem);
+        book.appendChild(div);
+    }
+
+    $("#flipbook").turn({
+        width:950,
+        autoCenter:true
+    });
+
+
+
+    var popup = document.getElementsByClassName("popup")[0];
+    popup.classList.toggle("show");
+}
+
+function bookClose(){
+    $("#flipbook").turn("destroy");
+    var popup = document.getElementsByClassName("popup")[0];
+    popup.classList.toggle("show");
+    isBook=false;
+}
+

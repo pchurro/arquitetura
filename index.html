@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Sequência do Tempo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<header><h1 id="title">A Sequência do Tempo</h1></header>
+<body>
+    <div id="image1">
+        <img onclick="openModal();currentSlide(1)" src="images/01.png">
+    </div>
+
+    <div id="image2">
+        <img onclick="openModal();currentSlide(4)" src="images/04.png">
+    </div>
+
+    <div id="image3">
+        <img onclick="openModal();currentSlide(5)" src="images/05.png">
+    </div>
+
+    <div id="image4">
+        <img onclick="openModal();currentSlide(3)" src="images/03.png">
+    </div>
+
+    <div id="image5">
+        <img onclick="openModal();currentSlide(2)" src="images/02.png">
+    </div>
+
+    <div id="image6">
+        <img onclick="openModal();currentSlide(8)" src="images/08.png">
+    </div>
+
+    <div id="image7">
+        <img onclick="openModal();currentSlide(6)" src="images/06.png">
+    </div>
+
+    <div id="image8">
+        <img onclick="openModal();currentSlide(7)" src="images/07.png">
+    </div>
+
+    <div id="image9">
+        <img onclick="openModal();currentSlide(9)" src="images/09.png">
+    </div>
+
+    <div id="image10">
+        <img onclick="openModal();currentSlide(10)" src="images/livro1/01.png">
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 10</div>
+                <img src="images/01.png" style="width:100%; height:100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 10</div>
+                <img src="images/02.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 10</div>
+                <img src="images/03.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 10</div>
+                <img src="images/04.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 10</div>
+                <img src="images/05.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 10</div>
+                <img src="images/06.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 10</div>
+                <img src="images/07.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 10</div>
+                <img src="images/08.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 10</div>
+                <img src="images/09.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">10 / 10</div>
+                <img src="images/livro1/01.png" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -10,100 +10,126 @@
     <script src="scripts/turn.min.js"></script>
     <script src="script.js"></script>
 </head>
-<header><h1 id="title">A Sequência do Tempo</h1></header>
-<body>
-    <div id="image1">
-        <img onclick="openModal();currentSlide(1)" src="images/01.png">
-    </div>
+<header>
+    <h1 id="title">A Sequência do tempo</h1>
+    <h2 id="subtitle">O Indíviduo que deambula o Espaço</h2>
+</header>
+<body onload="makeBooks();changeHeight()">
+<div id="image1">
+    <img onclick="openModal();currentSlide(1)" src="images/01.png">
+</div>
 
-    <div id="image2">
-        <img onclick="openModal();currentSlide(4)" src="images/04.png">
-    </div>
+<div id="image2">
+    <img onclick="openModal();currentSlide(4)" src="images/04.png">
+</div>
 
-    <div id="image3">
-        <img onclick="openModal();currentSlide(5)" src="images/05.png">
-    </div>
+<div id="image3">
+    <img onclick="openModal();currentSlide(5)" src="images/05.png">
+</div>
 
-    <div id="image4">
-        <img onclick="openModal();currentSlide(3)" src="images/03.png">
-    </div>
+<div id="image4">
+    <img onclick="openModal();currentSlide(3)" src="images/03.png">
+</div>
 
-    <div id="image5">
-        <img onclick="openModal();currentSlide(2)" src="images/02.png">
-    </div>
+<div id="image5">
+    <img onclick="openModal();currentSlide(2)" src="images/02.png">
+</div>
 
-    <div id="image6">
-        <img onclick="openModal();currentSlide(8)" src="images/08.png">
-    </div>
+<div id="image6">
+    <img onclick="openModal();currentSlide(8)" src="images/08.png">
+</div>
 
-    <div id="image7">
-        <img onclick="openModal();currentSlide(6)" src="images/06.png">
-    </div>
+<div id="image7">
+    <img onclick="openModal();currentSlide(6)" src="images/06.png">
+</div>
 
-    <div id="image8">
-        <img onclick="openModal();currentSlide(7)" src="images/07.png">
-    </div>
+<div id="image8">
+    <img onclick="openModal();currentSlide(7)" src="images/07.png">
+</div>
 
-    <div id="image9">
-        <img onclick="openModal();currentSlide(9)" src="images/09.png">
-    </div>
+<div id="image9">
+    <img onclick="openModal();currentSlide(9)" src="images/09.png">
+</div>
 
-    <div id="image10">
-        <img onclick="bookAppear()" src="images/livro1/01.png">
-    </div>
+<div id="image10">
+    <img onclick="bookAppear()" src="images/livro1/01.png">
+</div>
 
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">X</span>
-        <div class="modal-content">
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">X</span>
+    <div class="modal-content">
 
-            <div class="mySlides">
-                <img src="images/01.png">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/02.png">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/03.png">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/04.png">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/05.png">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/06.png">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/07.png">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/08.png">
-            </div>
-
-            <div class="mySlides">
-                <img src="images/09.png">
-            </div>
-
-
-
+        <div class="mySlides">
+            <img src="images/01.png">
         </div>
-    </div>
 
-    <div class="popup">
-        <div id="flipbook">
-
+        <div class="mySlides">
+            <img src="images/02.png">
         </div>
-        <span class="close" onclick="bookClose()">X</span>
-    </div>
 
+        <div class="mySlides">
+            <img src="images/03.png">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/04.png">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/05.png">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/06.png">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/07.png">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/08.png">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/09.png">
+        </div>
+
+
+    </div>
+</div>
+
+<div class="popup">
+    <div id="flipbook1">
+
+    </div>
+    <span class="close" onclick="bookClose()">X</span>
+</div>
 
 </body>
+
+<div id="books">
+
+    <div id="flipbook2">
+
+    </div>
+
+
+    <div id="flipbook3">
+
+    </div>
+
+</div>
+
+<footer>
+    <span>"A Sequência do Tempo, o Indivíduo que Deambula o Espaço"</span><br>
+    <span>Faculdade de Arquitectura da Universidade do Porto</span><br>
+    <span>um artigo de Alexandra Gonçalves, Carolina Brás,<br>José Pereira, Sofia Montenegro, Pedro Oliveira</span><br>
+    <span>Com a orientação de Axel Fangueiro e Luís Viegas</span><br>
+    <span>Website por <a href="https://www.github.com/pchurro">Pedro Churro</a></span><br>
+    <span>Teoria II - 2019/2020</span><br>
+
+</footer>
+
+
 </html>
